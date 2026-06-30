@@ -9,14 +9,32 @@
   <title>QuickList | Lista de Compras</title>
 
   <link rel="stylesheet" href="./styles/index.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css"/>
   <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,500;1,14..32,500&display=swap" rel="stylesheet">
 
   <script src="./scripts.js" defer></script>
 </head>
 <body>
-  <section id="logo" class="container desktop-only">
+  <section id="logo">
     <img src="./assets/logo.png" alt="Logo QuickList">
   </section>
+  <div class="container">
 
-</body>
-</html>
+    <header>
+      <a href="#">
+        <i class="ph ph-arrow-left"></i> Voltar
+      </a>
+    </header>
+    <main>
+      <h1>Compras da semana</h1>
+
+      <form>
+        <input type="text" placeholder="Adicione um novo item" class="list-add">
+        <input type="submit" value="Adicionar item" class="btn">
+      </form>
+    </main>
+    
+    
+  </div>
+  </body>
+  </html>
