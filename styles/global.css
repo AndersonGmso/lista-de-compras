@@ -54,7 +54,9 @@ h1 {
   padding: 1.5rem ;
 }
 
-
+header {
+  overflow: hidden;
+}
 
 header a {
   font: var(--link);
