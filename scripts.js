@@ -1,10 +1,14 @@
 
 const form = document.querySelector("form")
 const ul = document.querySelector(".list-field")
+const alert = document.querySelector(".error")
 form.onsubmit = (event) => {
   event.preventDefault()
   
   const value = event.target["add-item"].value
+  if (value.trim() === "") {
+    return
+  }
   const newItem = `<li class="list-item">
   <input type="checkbox" name="check">
   <div class="checkbox-img"></div>
@@ -19,11 +23,16 @@ form.onsubmit = (event) => {
   </button>
   </li>`
   ul.insertAdjacentHTML('beforeend', newItem)
+  event.target["add-item"].value = ""
 }
   
   ul.addEventListener("click", (event) => {
     if (event.target.closest("button")) {
       const item = event.target.closest("li")
       item.remove()
+      alert.style.display = "flex"
     }
+    setTimeout(() => {
+    alert.style.display = "none"
+  }, 3000)
   })

@@ -50,6 +50,7 @@ input[type="checkbox"] {
 }
 
 ul {
+  overflow: hidden;
   margin-top: 2.5rem;
   width: 100%;
   list-style-type: none;
@@ -59,6 +60,7 @@ li button {
   margin-left: auto;
 }
 button {
+  overflow: hidden;
   width: 1.25rem;
   height: 1.25rem;
   border: none;

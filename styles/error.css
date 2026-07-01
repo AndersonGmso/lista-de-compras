@@ -1,0 +1,25 @@
+.error {
+  display: none;
+  background-color: var(--color-danger);
+  width: 100%;
+  height: 2.75rem;
+  border-radius: .75rem;
+  padding-left: .75rem;
+  gap: .75rem;
+  align-items: center;
+  align-content: center;
+  animation: error 1000ms ease both;
+  & span {
+    font: var(--label);
+    color: var(--background-secondary);
+    align-self: center;
+  }
+}
+
+@keyframes error {
+  0% {
+    transform: translateX(2000px);
+  }
+  100% {transform: translateX(0px);}
+
+}
