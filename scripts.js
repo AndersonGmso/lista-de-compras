@@ -20,4 +20,10 @@ form.onsubmit = (event) => {
   </li>`
   ul.insertAdjacentHTML('beforeend', newItem)
 }
-
+  
+  ul.addEventListener("click", (event) => {
+    if (event.target.closest("button")) {
+      const item = event.target.closest("li")
+      item.remove()
+    }
+  })
