@@ -1,6 +1,6 @@
 <h1>Lista de Compras</h1>
 <h2>Projeto de um site de Lista de compras desenvolvido durante as aulas de JavaScript da Rocketseat</h2>
-<a href="https://andersongmso.github.io/zingen/" target="_blank">
+<a href="https://andersongmso.github.io/lista-de-compras/" target="_blank">
   <img width="1920" height="1080" alt="lista de compras" src="https://github.com/user-attachments/assets/836ebf4a-a08f-4818-a117-42d32e0b3c79" />
 </a>
 
